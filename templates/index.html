@@ -1,0 +1,85 @@
+{% include "include/header.html" %}
+{% include "include/navbar.html" %}
+{% include "include/flash_message.html" %}
+
+<main>
+    <!-- News Carousel -->
+    <div id="newsCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{url_for('static', filename='images/News.jpg')}}" class="d-block w-100" alt="News 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Breaking News Title 1</h5>
+                    <p>Summary of the breaking news goes here. It gives a brief overview of the story.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="https://picsum.photos/1200/500" class="d-block w-100" alt="News 2"> -->
+                <img src="{{url_for('static', filename='images/news2.jpg')}}" class="d-block w-100" alt="News 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Breaking News Title 2</h5>
+                    <p>Summary of the breaking news goes here. It gives a brief overview of the story.</p> -->
+                </div>
+            </div>
+            <!-- Add more items here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Trending News Section -->
+    <section class="container mt-5">
+        <h2>Trending News</h2>
+        <div class="row" id="trending">
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Trending 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Trending News Title 1</h5>
+                        <p class="card-text">Brief description of the trending news. It provides some details about the
+                            story.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </section>
+
+
+    <!-- Latest Articles Section -->
+    <section class="container mt-5">
+        <h2>Latest Articles</h2>
+        <div class="row" id="latest">
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Article 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Article 1</h5>
+                        <p class="card-text">Brief description of the latest article. It provides some details about the
+                            story.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div> -->
+            
+            
+        </div>
+    </section>
+
+
+    <!-- Load More Button
+    <div class="text-center mt-4">
+        <button id="loadMore" class="btn btn-secondary">Load More</button>
+    </div> -->
+</main>
+{% include "include/footer_content.html" %}
+{% include "include/footer.html" %}
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>

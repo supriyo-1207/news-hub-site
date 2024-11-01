@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* contact form */
+.contact-form {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+    border-radius: 0.25rem;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* index page */
+.carousel-item img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#latestArticles .card {
+    display: none;
+}
+
+#latestArticles .card.show {
+    display: block;
+}

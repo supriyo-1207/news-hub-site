@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+pymysql
+flask-session
+python-dotenv
+flask-bcrypt
+requests
+Flask-WTF
